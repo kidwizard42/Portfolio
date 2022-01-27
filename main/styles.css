@@ -1,0 +1,47 @@
+/* universal and all of one element */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+/* helpers */
+
+/* .flex{
+    display: flex;
+} */
+
+/* all elements in main nav */
+#main-nav{
+    font-size: 20px;
+    padding:1em;
+    display: flex;
+    position: -webkit-sticky;
+position: sticky;
+top: 0;
+background-color: aqua;
+}
+.welcome{
+    color:red;
+    width:60%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .welcome-p{
+    width:50%;
+    
+} */
+#main-nav-ul{
+    list-style: none;
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    cursor:pointer;
+}
