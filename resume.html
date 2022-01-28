@@ -12,13 +12,37 @@
     <nav id="main-nav"> 
         <div class="welcome"><p class="welcome-p">Hi, welcome to my resume</p></div>
         <ul id="main-nav-ul"> 
+
+             <!-- Got from svg from https://css-tricks.com/snippets/svg/svg-hamburger-menu/ -->
+            <svg id="hamburger" viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+              </svg>
             
-            <li class="main-nav-li"><a href="index.html">Home</a></li>
-            <li class="main-nav-li"><a href=".interaction">About</a></li>
-            <li class="main-nav-li"><a href="#">Portfolio</a></li>
-            <li class="main-nav-li"><a href="#">Contact</a></li>
-            
+            <li class="main-nav-li display-none"><a href="index.html">Home</a></li>
+            <li class="main-nav-li display-none"><a href=".interaction">About</a></li>
+            <li class="main-nav-li display-none"><a href="#">Portfolio</a></li>
+            <li class="main-nav-li display-none"><a href="#">Contact</a></li>
         </ul>
     </nav>
+
+   
+    
+
+        <div class="resume-content flex">
+            <h1>Darwood Antoine</h1>
+
+            <div class="skills flex">
+                <p>SKILLS:</p>
+                <ul class="flex resume-ul"> 
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>PYTHON</li>
+                </ul>
+            </div>
+        </div>
+    
 </body>
 </html>
