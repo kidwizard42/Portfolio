@@ -1,0 +1,256 @@
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* universal helpers settings and helpers */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+*,*::before,*::after{
+    box-sizing: border-box;
+
+
+}
+
+body{
+    margin:0;
+    padding:0;
+    /* background-color: black; */
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+ul{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+
+.flex{
+    display: flex;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* MAIN NAV ELEMENTS */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+#main-nav{
+    display:flex;
+    padding:1em;
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: aqua;
+    width:100%;
+}
+.main-nav-welcome{
+    width:75%;
+    font-size: 1.3rem;
+}
+
+#main-nav-ul{
+    list-style: none;
+    width:25%;
+    /* margin-left:auto; */
+    padding: 0;
+    /* margin:0; */
+
+}
+
+.main-nav-li{
+    cursor:pointer;
+    padding-top:3px;
+    padding-bottom: 3px;
+}
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* RESUME CONTENT */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+.resume{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+
+.resume-ul{
+    width:100%;
+    margin:0 auto;
+
+    padding: 20px;
+    background-color: aqua;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.resume-ul li{
+    padding: 3px;
+    
+}
+.resume-skills p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resume-skills{
+    width:25%;
+    background-color: chartreuse;
+    border: 2px solid pink;
+}
+
+
+.resume-education{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* MEDIA QUERIES */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+@media (max-width: 650px) { 
+
+    /* for mobile dropdown  */
+    /* no transition bc display:none */
+    .display-none{
+        display: none;
+    }
+
+    .main-nav-welcome{
+        /* display: flex;
+        justify-content: space-around;
+        align-items: center; */
+        /* width:45%; */
+        font-size: 1.6rem;
+    }
+
+
+    .resume-ul{
+        width:100%;
+        margin:0;
+        padding: 10px;
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .resume-ul li{
+        padding: 3px;
+        
+    }
+    .resume-skills{
+        width:25%;
+        flex-direction: column;
+        background-color: chartreuse;
+        border: 2px solid pink;
+    }
+
+
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* MIGHT DELETE!!! IF I DO FIND SOLUTION FOR THIS WIDTH */
+@media only screen and (min-width: 651px) and (max-width: 899px)  {
+
+    .hide-burger{
+        display: none;
+    }
+
+    .main-nav-welcome{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width:45%;
+        font-size: 2rem;
+        }
+
+    #main-nav-ul{
+        list-style: none;
+        width:55%;
+        /* margin-left:auto; */
+        padding: 0;
+        /* margin:0; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.2rem;
+    
+    }
+
+
+
+    .resume-ul{
+        width:100%;
+        margin:0;
+        padding: 10px;
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .resume-ul li{
+        padding: 3px;
+        
+    }
+    .resume-skills{
+        width:25%;
+        flex-direction: column;
+        background-color: chartreuse;
+        border: 2px solid pink;
+    }
+
+}
+
+
+
+@media (min-width: 900px) { 
+    .hide-burger{
+        display: none;
+    }
+
+    .main-nav-welcome{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width:45%;
+        font-size: 2rem;
+        }
+
+    #main-nav-ul{
+        list-style: none;
+        width:55%;
+        /* margin-left:auto; */
+        padding: 0;
+        /* margin:0; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.4rem;
+    
+    }
+
+}
+
+
+
+/* <div class="resume-education">
+<h3>EDUCATION</h3>
+<div class="resume-education-section">
+    <p>General Assembly</p>
+</div>
+<div class="resume-education-section">
+    <p> Bridgewater State University</p>
+</div>
+<div class="resume-education-section">
+    <p>Newbury College</p>
+</div> */

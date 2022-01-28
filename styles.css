@@ -23,9 +23,11 @@ li{
 .flex{
     display: flex;
 }
+
 body{
     background-color: pink;
 }
+/* All  header nav elements */
 #main-nav{
     font-size: 20px;
     padding:1em;
@@ -52,10 +54,11 @@ width:100%;
 
 /* only defined in smaller media query to make dropdown */
 .display-none{
-    
+    /* this way doesnt allow css transtions :/ */
     display: none; 
+/*     
     transition-duration: 500ms;
-    transition-property: display;
+    transition-property: display; */
 }
 .welcome{
     color:red;
@@ -74,7 +77,32 @@ width:100%;
     
 }
 
+/* resume content */
 
+.resume-content{
+    padding:5px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
+.resume-ul{
+    font-size: .9rem;
+    /* width:100%; */
+    /* justify-content: space-around; */
+    /* flex-direction: column;  */
+}
 
+.skills p{
+/* text-align: center; */
+/* FLEX TO ALIGN W MY SKILL LIST */
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+.resume-ul li{
+    padding:3px;
+}
+
+}

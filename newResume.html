@@ -5,36 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="new.css">
+    <title>Test</title>
 </head>
 <body>
     <!-- The whole sticky nav hamburger and welcome included -->
-    <nav id="main-nav "> 
-        <div class="welcome"><p class="welcome-p">Hi, welcome to my resume</p></div>
+    <nav id="main-nav"> 
+        <div class="main-nav-welcome"><p class="main-nav-welcome-p">Hi, welcome to my resume</p></div>
+        
         <ul id="main-nav-ul"> 
-
-             <!-- Got from svg from https://css-tricks.com/snippets/svg/svg-hamburger-menu/ -->
-            <svg id="hamburger" viewBox="0 0 100 80" width="40" height="40">
+            <svg id="main-nav-ul-hamburger" class="hide-burger" viewBox="0 0 100 80" width="40" height="40">
                 <rect width="100" height="20"></rect>
                 <rect y="30" width="100" height="20"></rect>
                 <rect y="60" width="100" height="20"></rect>
               </svg>
-            
-            <li class="main-nav-li display-none"><a href="index.html">Home</a></li>
+            <li class="main-nav-li display-none"><a href="new.html">Home</a></li>
             <li class="main-nav-li display-none"><a href=".interaction">About</a></li>
             <li class="main-nav-li display-none"><a href="#">Portfolio</a></li>
             <li class="main-nav-li display-none"><a href="#">Contact</a></li>
+            
         </ul>
     </nav>
 
    
     <!-- All of my resume content -->
 
-        <div class="resume-content flex">
+        <div class="resume flex">
             <h1>Darwood Antoine</h1>
 
-            <div class="skills flex">
+            <div class="resume-skills flex">
                 <p>SKILLS:</p>
                 <ul class="flex resume-ul"> 
                     <li>HTML</li>
@@ -44,10 +43,13 @@
                 </ul>
             </div>
 
-            <div class="education">
+            <div class="resume-education">
+                <h3>EDUCATION</h3>
+                
                 <p>General Assembly</p>
-                <p> </p>
-                <p></p>
+                <p> Bridgewater State University</p>
+                <p>Newbury College</p>
+
             </div>
         </div>
     
