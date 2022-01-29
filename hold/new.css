@@ -2,10 +2,10 @@
 /* universal helpers settings and helpers */
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
 
+/* remember you didnt clear the padding and margin for everything.
+Make sure you check that as well for spacing issues */
 *,*::before,*::after{
     box-sizing: border-box;
-
-
 }
 
 body{
@@ -72,15 +72,19 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: bisque;
+    background-color: #F8F8F8;
+    
+    /* 92A9BD */
+    /* FFF2F9 */
+    /* CDDEFF */
+    /* F5F5F5 */
+    /* F6F6F6 */
 }
 
 .resume-ul{
     width:100%;
     margin:0 auto;
-
     padding: 20px;
-    background-color: aqua;
     display: flex;
     text-align: center;
     justify-content: space-around;
@@ -91,31 +95,63 @@ ul{
     
 }
 .resume-skills p{
+    font-size: 1.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration-line: underline;
 }
 .resume-skills{
     width:25%;
-    background-color: chartreuse;
-    border: 2px solid pink;
 }
 
 
 .resume-education{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.resume-education h3{
+    text-decoration-line: underline;
+}
+.resume-education p{
+    margin:10px;
+    
+}
+
+.resume-related-experience{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-related-experience h3{
+    text-decoration-line: underline;
+    margin-bottom:10px;
+}
+
+.resume-related-experience-section h4{
+    text-align: center;
+    cursor: pointer;
+    color: #1C6DD0;
+    /* text-decoration-line: underline; */
+}
+
+/* .resume-related-experience-section p{
+    color:#676FA3
+} */
+
+
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
 /* MEDIA QUERIES */
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
 
 @media (max-width: 650px) { 
-
     /* for mobile dropdown  */
     /* no transition bc display:none */
     .display-none{
@@ -123,10 +159,6 @@ ul{
     }
 
     .main-nav-welcome{
-        /* display: flex;
-        justify-content: space-around;
-        align-items: center; */
-        /* width:45%; */
         font-size: 1.6rem;
     }
 
@@ -135,7 +167,7 @@ ul{
         width:100%;
         margin:0;
         padding: 10px;
-        background-color: aqua;
+        
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -149,8 +181,8 @@ ul{
     .resume-skills{
         width:25%;
         flex-direction: column;
-        background-color: chartreuse;
-        border: 2px solid pink;
+        /* background-color: chartreuse;
+        border: 2px solid pink; */
     }
 
 
@@ -191,13 +223,14 @@ ul{
         width:100%;
         margin:0;
         padding: 10px;
-        background-color: aqua;
+        /* background-color: aqua; */
         display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: space-around;
         align-items: center;
     }
+
     .resume-ul li{
         padding: 3px;
         
@@ -205,12 +238,12 @@ ul{
     .resume-skills{
         width:25%;
         flex-direction: column;
-        background-color: chartreuse;
-        border: 2px solid pink;
     }
 
+    .resume-related-experience{
+        width:45%;
+    }
 }
-
 
 
 @media (min-width: 900px) { 
@@ -238,19 +271,13 @@ ul{
         font-size: 1.4rem;
     
     }
-
+    .resume-skills{
+        width:35%;
+        /* background-color: chartreuse;
+        border: 2px solid pink; */
+    }
+    .resume-related-experience{
+        width:50%;
+        max-width:600px;
+    }
 }
-
-
-
-/* <div class="resume-education">
-<h3>EDUCATION</h3>
-<div class="resume-education-section">
-    <p>General Assembly</p>
-</div>
-<div class="resume-education-section">
-    <p> Bridgewater State University</p>
-</div>
-<div class="resume-education-section">
-    <p>Newbury College</p>
-</div> */

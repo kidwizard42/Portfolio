@@ -1,108 +1,283 @@
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* universal helpers settings and helpers */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
 
-@media (max-width: 600px) { 
-
-    /* universal and all of one element */
-*{
-    padding:0;
-    margin:0;
+/* remember you didnt clear the padding and margin for everything.
+Make sure you check that as well for spacing issues */
+*,*::before,*::after{
     box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    /* background-color: black; */
 }
 
 a{
     text-decoration: none;
     color:black;
-    cursor:pointer;
 }
 
-li{
+ul{
     list-style: none;
+    font-size: 1.2rem;
 }
 
-/* helpers */
 
 .flex{
     display: flex;
 }
 
-body{
-    background-color: pink;
-}
-/* All  header nav elements */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* MAIN NAV ELEMENTS */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
 #main-nav{
-    font-size: 20px;
+    display:flex;
     padding:1em;
     display: flex;
     position: -webkit-sticky;
     position: sticky;
-/* top: 0; */
-background-color: aqua;
-width:100%;
+    top: 0;
+    background-color: aqua;
+    width:100%;
+}
+.main-nav-welcome{
+    width:75%;
+    font-size: 1.3rem;
 }
 
 #main-nav-ul{
-    /* display: none; */
-    /* display: flex; */
-    width: 20%;
-    /* justify-content: space-around; */
-    
+    list-style: none;
+    width:25%;
+    /* margin-left:auto; */
+    padding: 0;
+    /* margin:0; */
+
 }
 
-#main-nav-ul li{
-    padding:2px;
-    
+.main-nav-li{
+    cursor:pointer;
+    padding-top:3px;
+    padding-bottom: 3px;
 }
 
-/* only defined in smaller media query to make dropdown */
-.display-none{
-    /* this way doesnt allow css transtions :/ */
-    display: none; 
-/*     
-    transition-duration: 500ms;
-    transition-property: display; */
-}
-.welcome{
-    color:red;
-    width:80%;
-    font-size: 40px;
-    display: flex;
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* RESUME CONTENT */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+.resume{
+    flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-}
-
-#main-nav-ul::hover{
-    display: inherit;
-    /* display: flex; */
-    /* width: 40%; */
-    /* justify-content: space-around; */
+    align-items: center;
+    background-color: #F8F8F8;
     
-}
-
-/* resume content */
-
-.resume-content{
-    padding:5px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+    /* 92A9BD */
+    /* FFF2F9 */
+    /* CDDEFF */
+    /* F5F5F5 */
+    /* F6F6F6 */
 }
 
 .resume-ul{
-    font-size: .9rem;
-    /* width:100%; */
-    /* justify-content: space-around; */
-    /* flex-direction: column;  */
+    width:100%;
+    margin:0 auto;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
 }
-
-.skills p{
-/* text-align: center; */
-/* FLEX TO ALIGN W MY SKILL LIST */
-display:flex;
-justify-content: center;
-align-items: center;
-}
-
 .resume-ul li{
-    padding:3px;
+    padding: 3px;
+    
+}
+.resume-skills p{
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration-line: underline;
+}
+.resume-skills{
+    width:25%;
 }
 
+
+.resume-education{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-education h3{
+    text-decoration-line: underline;
+}
+.resume-education p{
+    margin:10px;
+    
+}
+
+.resume-related-experience{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-related-experience h3{
+    text-decoration-line: underline;
+    margin-bottom:10px;
+}
+
+.resume-related-experience-section h4{
+    text-align: center;
+    cursor: pointer;
+    color: #1C6DD0;
+    /* text-decoration-line: underline; */
+}
+
+/* .resume-related-experience-section p{
+    color:#676FA3
+} */
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* MEDIA QUERIES */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+@media (max-width: 650px) { 
+    /* for mobile dropdown  */
+    /* no transition bc display:none */
+    .display-none{
+        display: none;
+    }
+
+    .main-nav-welcome{
+        font-size: 1.6rem;
+    }
+
+
+    .resume-ul{
+        width:100%;
+        margin:0;
+        padding: 10px;
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .resume-ul li{
+        padding: 3px;
+        
+    }
+    .resume-skills{
+        width:25%;
+        flex-direction: column;
+        /* background-color: chartreuse;
+        border: 2px solid pink; */
+    }
+
+
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* MIGHT DELETE!!! IF I DO FIND SOLUTION FOR THIS WIDTH */
+@media only screen and (min-width: 651px) and (max-width: 899px)  {
+
+    .hide-burger{
+        display: none;
+    }
+
+    .main-nav-welcome{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width:45%;
+        font-size: 2rem;
+        }
+
+    #main-nav-ul{
+        list-style: none;
+        width:55%;
+        /* margin-left:auto; */
+        padding: 0;
+        /* margin:0; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.2rem;
+    
+    }
+
+
+
+    .resume-ul{
+        width:100%;
+        margin:0;
+        padding: 10px;
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .resume-ul li{
+        padding: 3px;
+        
+    }
+    .resume-skills{
+        width:25%;
+        flex-direction: column;
+    }
+
+    .resume-related-experience{
+        width:45%;
+    }
+}
+
+
+@media (min-width: 900px) { 
+    .hide-burger{
+        display: none;
+    }
+
+    .main-nav-welcome{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width:45%;
+        font-size: 2rem;
+        }
+
+    #main-nav-ul{
+        list-style: none;
+        width:55%;
+        /* margin-left:auto; */
+        padding: 0;
+        /* margin:0; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.4rem;
+    
+    }
+    .resume-skills{
+        width:35%;
+        /* background-color: chartreuse;
+        border: 2px solid pink; */
+    }
+    .resume-related-experience{
+        width:50%;
+        max-width:600px;
+    }
 }
