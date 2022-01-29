@@ -4,280 +4,360 @@
 
 /* remember you didnt clear the padding and margin for everything.
 Make sure you check that as well for spacing issues */
-*,*::before,*::after{
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-body{
-    margin:0;
-    padding:0;
-    /* background-color: black; */
+body {
+  margin: 0;
+  padding: 0;
+  /* position: relative; */
+  /* background-color: black; */
+}
+img {
+  /* width: 1000px; */
+  width: 100%;
+  object-fit: contain;
 }
 
-a{
-    text-decoration: none;
-    color:black;
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
 
-ul{
-    list-style: none;
-    font-size: 1.2rem;
+ul {
+  list-style: none;
+  font-size: 1.2rem;
 }
 
-
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
 /* MAIN NAV ELEMENTS */
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
 
-#main-nav{
-    display:flex;
-    padding:1em;
-    display: flex;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-color: aqua;
-    width:100%;
+#main-nav {
+  display: flex;
+  /* padding: 0.4em; */
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: aqua;
+  width: 100%;
+  /* here bc my left and right icons and my when i turn
+   things to pos relative they would go over it. */
+  z-index: 100;
 }
-.main-nav-welcome{
-    width:75%;
-    font-size: 1.3rem;
-}
-
-#main-nav-ul{
-    list-style: none;
-    width:25%;
-    /* margin-left:auto; */
-    padding: 0;
-    /* margin:0; */
-
+.main-nav-welcome {
+  width: 75%;
+  font-size: 1.3rem;
 }
 
-.main-nav-li{
-    cursor:pointer;
-    padding-top:3px;
-    padding-bottom: 3px;
+#main-nav-ul {
+  list-style: none;
+  width: 25%;
+  /* margin-left:auto; */
+  padding: 0;
+  /* margin:0; */
 }
 
+.main-nav-li {
+  cursor: pointer;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
 
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
 /* RESUME CONTENT */
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
 
-.resume{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #F8F8F8;
-    
-    /* 92A9BD */
-    /* FFF2F9 */
-    /* CDDEFF */
-    /* F5F5F5 */
-    /* F6F6F6 */
+.resume {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* 92A9BD */
+  /* FFF2F9 */
+  /* CDDEFF */
+  /* F5F5F5 */
+  /* F6F6F6 */
 }
 
-.resume-ul{
-    width:100%;
-    margin:0 auto;
-    padding: 20px;
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    align-items: center;
+.resume-ul {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
 }
-.resume-ul li{
-    padding: 3px;
-    
+.resume-ul li {
+  padding: 3px;
 }
-.resume-skills p{
-    font-size: 1.4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration-line: underline;
+.resume-skills p {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration-line: underline;
 }
-.resume-skills{
-    width:25%;
-}
-
-
-.resume-education{
-    /* border: 2px solid black; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.resume-skills {
+  width: 25%;
 }
 
-.resume-education h3{
-    text-decoration-line: underline;
-}
-.resume-education p{
-    margin:10px;
-    
-}
-
-.resume-related-experience{
-    width:80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.resume-education {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.resume-related-experience h3{
-    text-decoration-line: underline;
-    margin-bottom:10px;
+.resume-education h3 {
+  text-decoration-line: underline;
+}
+.resume-education p {
+  margin: 10px;
 }
 
-.resume-related-experience-section h4{
-    text-align: center;
-    cursor: pointer;
-    color: #1C6DD0;
-    /* text-decoration-line: underline; */
+.resume-related-experience {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-related-experience h3 {
+  text-decoration-line: underline;
+  margin-bottom: 10px;
+}
+
+.resume-related-experience-section h4 {
+  text-align: center;
+  cursor: pointer;
+  color: #1c6dd0;
+  /* text-decoration-line: underline; */
 }
 
 /* .resume-related-experience-section p{
     color:#676FA3
 } */
 
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* PROJECT CAROUSEL */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+.project-carousel-container {
+  /* border: 2px solid black; */
+  /* width: 80%; */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+.project-carousel-h2 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.project-carousel-h2:hover {
+  opacity: 0.7;
+}
+
+#right,
+#left {
+  cursor: pointer;
+  border: 3px solid red;
+  font-size: 80px;
+  /* font-size: 400%; */
+  /* anythind under 0 turns off hover */
+  /* z-index: ; */
+  /* position: absolute; */
+}
+
+#right:hover,
+#left:hover {
+  /* border: 3px solid blue; */
+  color: white;
+  background-color: black;
+}
+.section-wrapper {
+  /* border: 2px solid purple; */
+  min-width: 200px;
+  width: 70%;
+  /* max-width: 1000px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* display: none; */
+}
+#portfolio {
+  border: 2px solid yellow;
+}
+.project-carousel-img-and-text-container {
+  border: 2px solid purple;
+  min-width: 200px;
+  max-width: 1000px;
+  display: none;
+  /* height: 80vh; */
+  height: 900px;
+  overflow: hidden;
+}
+
+/* section {
+  position: relative;
+} */
+section:first-of-type {
+  /* display: inline-block; */
+  display: block;
+}
+.project-carousel-img {
+  height: 100%;
+}
+
+.project-carousel-text {
+  width: 100%;
+  height: 20%;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1em;
+  overflow: scroll;
+  margin: 0;
+}
+
+.project-carousel-text p {
+  margin: 0;
+}
 
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
 /* MEDIA QUERIES */
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
 
-@media (max-width: 650px) { 
-    /* for mobile dropdown  */
-    /* no transition bc display:none */
-    .display-none{
-        display: none;
-    }
+@media (max-width: 650px) {
+  /* for mobile dropdown  */
+  /* no transition bc display:none */
+  .display-none {
+    display: none;
+  }
 
-    .main-nav-welcome{
-        font-size: 1.6rem;
-    }
+  .main-nav-welcome {
+    font-size: 1.6rem;
+  }
 
+  .resume-ul {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
 
-    .resume-ul{
-        width:100%;
-        margin:0;
-        padding: 10px;
-        
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .resume-ul li{
-        padding: 3px;
-        
-    }
-    .resume-skills{
-        width:25%;
-        flex-direction: column;
-        /* background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .resume-ul li {
+    padding: 3px;
+  }
+  .resume-skills {
+    width: 25%;
+    flex-direction: column;
+    /* background-color: chartreuse;
         border: 2px solid pink; */
-    }
-
-
+  }
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
 /* MIGHT DELETE!!! IF I DO FIND SOLUTION FOR THIS WIDTH */
-@media only screen and (min-width: 651px) and (max-width: 899px)  {
+@media only screen and (min-width: 651px) and (max-width: 899px) {
+  .hide-burger {
+    display: none;
+  }
 
-    .hide-burger{
-        display: none;
-    }
+  .main-nav-welcome {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+    font-size: 2rem;
+  }
 
-    .main-nav-welcome{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width:45%;
-        font-size: 2rem;
-        }
+  #main-nav-ul {
+    list-style: none;
+    width: 55%;
+    /* margin-left:auto; */
+    padding: 0;
+    /* margin:0; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+  }
 
-    #main-nav-ul{
-        list-style: none;
-        width:55%;
-        /* margin-left:auto; */
-        padding: 0;
-        /* margin:0; */
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font-size: 1.2rem;
-    
-    }
+  .resume-ul {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+  }
 
+  .resume-ul li {
+    padding: 3px;
+  }
+  .resume-skills {
+    width: 25%;
+    flex-direction: column;
+  }
 
-
-    .resume-ul{
-        width:100%;
-        margin:0;
-        padding: 10px;
-        /* background-color: aqua; */
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .resume-ul li{
-        padding: 3px;
-        
-    }
-    .resume-skills{
-        width:25%;
-        flex-direction: column;
-    }
-
-    .resume-related-experience{
-        width:45%;
-    }
+  .resume-related-experience {
+    width: 45%;
+  }
 }
 
+@media (min-width: 900px) {
+  .hide-burger {
+    display: none;
+  }
 
-@media (min-width: 900px) { 
-    .hide-burger{
-        display: none;
-    }
+  .main-nav-welcome {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+    font-size: 2rem;
+  }
 
-    .main-nav-welcome{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width:45%;
-        font-size: 2rem;
-        }
-
-    #main-nav-ul{
-        list-style: none;
-        width:55%;
-        /* margin-left:auto; */
-        padding: 0;
-        /* margin:0; */
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font-size: 1.4rem;
-    
-    }
-    .resume-skills{
-        width:35%;
-        /* background-color: chartreuse;
+  #main-nav-ul {
+    list-style: none;
+    width: 55%;
+    /* margin-left:auto; */
+    padding: 0;
+    /* margin:0; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.4rem;
+  }
+  .resume-skills {
+    width: 35%;
+    /* background-color: chartreuse;
         border: 2px solid pink; */
-    }
-    .resume-related-experience{
-        width:50%;
-        max-width:600px;
-    }
+  }
+  .resume-related-experience {
+    width: 50%;
+    max-width: 600px;
+  }
 }

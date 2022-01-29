@@ -1,38 +1,149 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script src="app.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <title>Darwood Anotine</title>
-</head>
-<body>
-    <nav id="main-nav"> 
-        <div class="main-nav-welcome"><p class="main-nav-welcome-p">Hi, welcome to my page</p></div>
-        
-        <ul id="main-nav-ul"> 
-            <svg id="main-nav-ul-hamburger"  class="hide-burger" viewBox="0 0 100 80" width="40" height="40">
-                <rect width="100" height="20"></rect>
-                <rect y="30" width="100" height="20"></rect>
-                <rect y="60" width="100" height="20"></rect>
-              </svg>
-            <li class="main-nav-li display-none"><a href="resume.html">Resume</a></li>
-            <li class="main-nav-li display-none"><a href=".interaction">About</a></li>
-            <li class="main-nav-li display-none"><a href="#">Portfolio</a></li>
-            <li class="main-nav-li display-none"><a href="#">Contact</a></li>
-            
-        </ul>
+  </head>
+  <body>
+    <nav id="main-nav">
+      <div class="main-nav-welcome">
+        <a href="#"><p class="main-nav-welcome-p">Hi, welcome to my page</p></a>
+      </div>
+
+      <ul id="main-nav-ul">
+        <svg
+          id="main-nav-ul-hamburger"
+          class="hide-burger"
+          viewBox="0 0 100 80"
+          width="40"
+          height="40"
+        >
+          <rect width="100" height="20"></rect>
+          <rect y="30" width="100" height="20"></rect>
+          <rect y="60" width="100" height="20"></rect>
+        </svg>
+        <li class="main-nav-li display-none">
+          <a href="resume.html">Resume</a>
+        </li>
+        <li class="main-nav-li display-none">
+          <a href="#about">About</a>
+        </li>
+        <li class="main-nav-li display-none">
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li class="main-nav-li display-none"><a href="#">Contact</a></li>
+      </ul>
     </nav>
 
+    <a href="#portfolio"><h2 class="project-carousel-h2">Projects</h2></a>
+    <div id="portfolio" class="project-carousel-container">
+      <div class="left-btn-div">
+        <ion-icon id="left" name="chevron-back-circle-sharp"></ion-icon>
+      </div>
 
-    <div class="interaction">
-       
+      <main id="section-wrapper">
+        <section class="project-carousel-img-and-text-container">
+          <a
+            class="project-carousel-img"
+            href="https://kidwizard42.github.io/Pokemon-search-API/"
+            ><img
+              src="/portfolio-images/pokemon-card.png"
+              alt="site of pokemon cards built from api data"
+            />
+          </a>
+
+          <div class="project-carousel-text">
+            <p>
+              A webpage that uses the PokeApi API to request multiple pieces of
+              information for a specific Pokémon. It has a random generator if
+              you don’t have a specific Pokémon in mind and a search function. I
+              made it using HTML, CSS, JS (DOM, API)
+            </p>
+          </div>
+        </section>
+
+        <section class="project-carousel-img-and-text-container">
+          <a
+            class="project-carousel-img"
+            href="https://kidwizard42.github.io/article-preview-component/"
+            ><img
+              src="/portfolio-images/article-preview.png"
+              alt="site of pokemon cards built from api data"
+            />
+          </a>
+
+          <div class="project-carousel-text">
+            <p>
+              A responsive web page with both a mobile and desktop design. It
+              was made using HTML CSS (flexbox) and JavaScript.
+            </p>
+          </div>
+        </section>
+
+        <section class="project-carousel-img-and-text-container">
+          <a
+            class="project-carousel-img"
+            href="https://kidwizard42.github.io/social-proof-section-master/"
+            ><img
+              src="/portfolio-images/social-proof.png"
+              alt="site of pokemon cards built from api data"
+            />
+          </a>
+
+          <div class="project-carousel-text">
+            <p>
+              A page made to show hypothetical customer reviews and company
+              ratings of a product. It’s a responsive page made with HTML and
+              CSS. The page has a desktop and mobile design.
+            </p>
+          </div>
+        </section>
+      </main>
+      <div class="right-btn-div">
+        <ion-icon id="right" name="chevron-forward-circle-sharp"></ion-icon>
+      </div>
     </div>
-    <div class="about"><p>I am a software engineer pursuing a Bachelors degree in Computer Science at BSU. 
-         After earning my degree in Sport Management, I've learned my passion lies in coding. I'm eager to become a 
-         reliable member of a team.</p></div>
-    
-</body>
+
+    <main id="about"></main>
+    <h2>About Me</h2>
+
+    <p>
+      Lorem ipsum dolor sit amet, habeo propriae eam at, aperiam efficiantur eum
+      et. Ea quaestio definitiones has, vitae gloriatur referrentur vis ex, modo
+      praesent vituperata usu ex. Wisi nullam definitionem per eu, ad iudico
+      fabulas sententiae duo. Ex vis corrumpit conclusionemque, per enim oratio
+      dolorem ex. Vis ex nominavi tincidunt, suas ocurreret vel ea. Suavitate
+      argumentum instructior qui cu, affert aliquam evertitur te quo. Aeque
+      lucilius expetenda ut ius, ne tota solet qui. Decore aeterno qui ea, et
+      illum altera malorum pri, falli semper vim ad. In has tale clita, sed
+      inani molestie ad. Ea his nihil option.
+    </p>
+
+    <!-- <div class="interaction"></div> -->
+    <!-- <div class="about">
+      <p>
+        I am a software engineer pursuing a Bachelors degree in Computer Science
+        at BSU. After earning my degree in Sport Management, I've learned my
+        passion lies in coding. I'm eager to become a reliable member of a team.
+      </p>
+    </div> -->
+
+    <!-- for my left and right arrows -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
