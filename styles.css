@@ -23,6 +23,7 @@ body {
   background-color: #03012c;
 
   color: white;
+  /* background-color: white; */
 }
 img {
   /* width: 1000px; */
@@ -214,16 +215,6 @@ ul {
   color: #94daff;
   background-color: #94b3fd;
 }
-.section-wrapper {
-  /* border: 2px solid purple; */
-  min-width: 200px;
-  width: 70%;
-  /* max-width: 1000px; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* display: none; */
-}
 
 .project-carousel-img-and-text-container {
   /* border: 2px solid purple; */
@@ -372,11 +363,19 @@ input[type="submit"] {
   .display-none {
     display: none;
   }
-
+  /*  max-width: 650px main nav */
   .main-nav-welcome {
     font-size: 1.6rem;
+    padding-left: 0.5em;
   }
-
+  #main-nav-ul {
+    list-style: none;
+    width: 25%;
+    /* margin-left:auto; */
+    padding-left: 20px;
+    /* margin:0; */
+  }
+  /*  max-width: 650px resume page */
   .resume-ul {
     width: 100%;
     margin: 0;
@@ -396,6 +395,70 @@ input[type="submit"] {
     flex-direction: column;
     /* background-color: chartreuse;
         border: 2px solid pink; */
+  }
+  /* max-width: 650px carousel */
+
+  .project-carousel-container {
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    height: 250px;
+    width: 80%;
+    margin: 0 auto;
+    /* overflow: hidden; */
+  }
+  .project-carousel-img-and-text-container {
+    height: 100%;
+    overflow: hidden;
+  }
+  #section-wrapper {
+    /* border: 2px solid yellow; */
+    min-width: 100px;
+    width: 100%;
+    height: 250px;
+  }
+  .project-carousel-text {
+    display: none;
+  }
+  #left {
+    display: none;
+  }
+  #right {
+    font-size: 80px;
+    margin-top: 20px;
+  }
+
+  /* max-width: 650px about me */
+  #about h2 {
+    margin-top: 50px;
+  }
+
+  #about p {
+    height: 300px;
+    overflow: scroll;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  /* max-width: 650px footer */
+  #footer-nav ul {
+    width: 80%;
+  }
+
+  /* max-width: 650px contact modal */
+  .contact-modal-main {
+    /* background-color: red;  */
+    width: 90vw;
+    height: 50vh;
+    font-size: 1rem;
+  }
+  .modal-input-div {
+    margin: 20px auto;
+    width: 100%;
+  }
+  #message {
+    width: 60vw;
+    /* height: 200px; */
   }
 }
 
@@ -449,6 +512,78 @@ input[type="submit"] {
   .resume-related-experience {
     width: 45%;
   }
+
+  /* max-width: 650px carousel */
+  img {
+    /* width: 1000px; */
+    /* width: 120%; */
+    /* height: 800px; */
+    height: 100%;
+    /* object-fit: fill; */
+  }
+  .project-carousel-container {
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    height: 450px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .project-carousel-img-and-text-container {
+    height: 100%;
+  }
+  #section-wrapper {
+    /* border: 2px solid yellow; */
+    min-width: 100px;
+    width: 100%;
+    height: 400px;
+  }
+
+  .project-carousel-text {
+    display: none;
+  }
+  #left {
+    display: none;
+  }
+  #right {
+    font-size: 80px;
+    margin-top: 20px;
+  }
+
+  #about h2 {
+    margin-top: 50px;
+  }
+  /* max-width: 650px about me */
+
+  #about p {
+    height: 300px;
+    overflow: scroll;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  /* max-width: 650px footer */
+  #footer-nav ul {
+    width: 80%;
+  }
+
+  /* max-width: 650px contact modal */
+  .contact-modal-main {
+    /* background-color: red;  */
+    width: 90vw;
+    height: 50vh;
+    font-size: 1rem;
+  }
+  .modal-input-div {
+    margin: 20px auto;
+    width: 100%;
+  }
+  #message {
+    width: 60vw;
+    /* height: 200px; */
+  }
 }
 
 @media (min-width: 900px) {
@@ -483,5 +618,12 @@ input[type="submit"] {
   .resume-related-experience {
     width: 50%;
     max-width: 600px;
+  }
+
+  #left {
+    margin-right: 20px;
+  }
+  #right {
+    margin-left: 20px;
   }
 }

@@ -1,16 +1,18 @@
 $(() => {
   $menuDrop = $("#main-nav-ul-hamburger")
   $menuDrop.on("click", () => {
-    $(".main-nav-li").toggleClass("display-none")
-    console.log("works")
+    // $(".main-nav-li").toggleClass("display-none")
+    $(".main-nav-li").slideToggle(450)
+    // console.log("works")
   })
 
   let projectIndex = 0
+  let numberOfPojects = $("#section-wrapper").children().length - 1
   $("#right").on("click", () => {
     $("#section-wrapper").children().eq(projectIndex).css("display", "none")
     projectIndex++
     // need to change this when I add more projects
-    if (projectIndex > 2) {
+    if (projectIndex > numberOfPojects) {
       projectIndex = 0
     }
     $("#section-wrapper").children().eq(projectIndex).css("display", "block")
@@ -21,7 +23,7 @@ $(() => {
     projectIndex--
     if (projectIndex < 0) {
       //   need to change this when I add more projects
-      projectIndex = 2
+      projectIndex = $("#section-wrapper").children().length - 1
     }
     $("#section-wrapper").children().eq(projectIndex).css("display", "block")
   })
