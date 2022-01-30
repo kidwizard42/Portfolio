@@ -1,32 +1,57 @@
 $(() => {
-  $menuDrop = $("#main-nav-ul-hamburger")
-  $menuDrop.on("click", () => {
-    // $(".main-nav-li").toggleClass("display-none")
-    $(".main-nav-li").slideToggle(450)
-    // console.log("works")
-  })
-
+  // MY GLOBAL (within the jquery function global) VARIABLES AND FUNCTIONS
   let projectIndex = 0
   let numberOfPojects = $("#section-wrapper").children().length - 1
-  $("#right").on("click", () => {
+
+  const autoNextImg = () => {
     $("#section-wrapper").children().eq(projectIndex).css("display", "none")
     projectIndex++
-    // need to change this when I add more projects
+
     if (projectIndex > numberOfPojects) {
       projectIndex = 0
     }
     $("#section-wrapper").children().eq(projectIndex).css("display", "block")
-  })
+  }
 
-  $("#left").on("click", () => {
+  let sliderInterval = setInterval(autoNextImg, 5000)
+
+  const nextImgRight = () => {
+    clearInterval(sliderInterval)
     $("#section-wrapper").children().eq(projectIndex).css("display", "none")
-    projectIndex--
-    if (projectIndex < 0) {
-      //   need to change this when I add more projects
-      projectIndex = $("#section-wrapper").children().length - 1
+
+    // Looks worse when I have it fade bc of how the html is set up
+    // $("#section-wrapper").children().eq(projectIndex).fadeOut(100)
+    // $("#section-wrapper").delay(200)
+    projectIndex++
+
+    if (projectIndex > numberOfPojects) {
+      projectIndex = 0
     }
     $("#section-wrapper").children().eq(projectIndex).css("display", "block")
-  })
+    // $("#section-wrapper").children().eq(projectIndex).fadeIn(100)
+    sliderInterval = setInterval(autoNextImg, 3000)
+  }
+
+  const nextImgLeft = () => {
+    clearInterval(sliderInterval)
+
+    $("#section-wrapper").children().eq(projectIndex).css("display", "none")
+
+    // $("#section-wrapper").children().eq(projectIndex).fadeOut(500)
+    // $("#section-wrapper").delay(400)
+    projectIndex--
+    if (projectIndex < 0) {
+      projectIndex = $("#section-wrapper").children().length - 1
+    }
+    // $("#section-wrapper").children().eq(projectIndex).fadeIn(600)
+
+    $("#section-wrapper").children().eq(projectIndex).css("display", "block")
+    sliderInterval = setInterval(autoNextImg, 3000)
+  }
+
+  $("#right").on("click", nextImgRight)
+
+  $("#left").on("click", nextImgLeft)
 
   $("#modal-form").on("submit", (e) => {
     e.preventDefault()
