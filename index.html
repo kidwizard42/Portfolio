@@ -16,7 +16,7 @@
     ></script>
     <script src="app.js"></script>
     <link rel="stylesheet" href="styles.css" />
-    <title>Darwood Anotine</title>
+    <title>Portfolio</title>
   </head>
   <body>
     <nav id="main-nav">
@@ -45,7 +45,7 @@
         <li class="main-nav-li display-none">
           <a href="#portfolio">Portfolio</a>
         </li>
-        <li class="main-nav-li display-none"><a href="#">Contact</a></li>
+        <li class="main-nav-li display-none"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
@@ -133,6 +133,46 @@
         clita, sed inani molestie ad. changing text to get this to update faster
       </p>
     </main>
+
+    <footer id="contact">
+      <nav id="footer-nav">
+        <ul>
+          <li>
+            <a href="https://github.com/kidwizard42"
+              ><ion-icon id="github" name="logo-github"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/darwoodantoine"
+              ><ion-icon id="linkedIN" name="logo-linkedin"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <ion-icon id="email" name="mail-outline"></ion-icon>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <div class="contact-modal-background">
+      <div class="contact-modal-main">
+        <span class="remove-modal">x</span>
+        <form id="modal-form" action="">
+          <div class="modal-input-div">
+            <label for="name"> Name: </label>
+            <br />
+            <input id="name" name="name" type="text" />
+          </div>
+          <div class="modal-input-div">
+            <label for="message"> Message here: </label>
+            <br />
+            <textarea id="message" type="text" name="message"  rows="4" cols="50"/></textarea>
+          </div>
+
+          <div> <input type="submit">
+        </form>
+      </div>
+    </div>
 
     <!-- <div class="interaction"></div> -->
     <!-- <div class="about">

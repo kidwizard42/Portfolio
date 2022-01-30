@@ -25,4 +25,16 @@ $(() => {
     }
     $("#section-wrapper").children().eq(projectIndex).css("display", "block")
   })
+
+  $("#modal-form").on("submit", (e) => {
+    e.preventDefault()
+    $(".contact-modal-background").css("display", "none")
+  })
+
+  $("#email").on("click", () => {
+    $(".contact-modal-background").css("display", "flex")
+  })
+  $(".remove-modal").on("click", () => {
+    $(".contact-modal-background").css("display", "none")
+  })
 })
