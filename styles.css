@@ -11,6 +11,11 @@ Make sure you check that as well for spacing issues */
   font-family: "Poiret One", cursive;
 }
 
+/* pls remember */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
