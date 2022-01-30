@@ -52,7 +52,7 @@ $(() => {
   $menuDrop = $("#main-nav-ul-hamburger")
   $menuDrop.on("click", () => {
     // $(".main-nav-li").toggleClass("display-none")
-    $(".main-nav-li").slideToggle(350)
+    $(".main-nav-li").slideToggle(450)
     // console.log("works")
   })
 
