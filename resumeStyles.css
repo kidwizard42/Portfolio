@@ -4,4 +4,6 @@ body {
   background-color: #f8f8f8;
   /* background-color: red;  */
   color: black;
+  box-sizing: border-box;
+  font-family: "Poiret One", cursive;
 }
