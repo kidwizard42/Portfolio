@@ -7,3 +7,19 @@ body {
   box-sizing: border-box;
   font-family: "Poiret One", cursive;
 }
+
+a {
+  text-decoration: none;
+}
+
+/* stops resume links from having a white underline */
+a:hover {
+  /* color: white; */
+  text-decoration: none;
+}
+
+/* keeps the white underline for the resume page nav */
+#main-nav a:hover {
+  color: white;
+  text-decoration: underline;
+}

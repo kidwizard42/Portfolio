@@ -13,7 +13,7 @@ $(() => {
     $("#section-wrapper").children().eq(projectIndex).css("display", "block")
   }
 
-  let sliderInterval = setInterval(autoNextImg, 8000)
+  let sliderInterval = setInterval(autoNextImg, 4000)
 
   const nextImgRight = () => {
     clearInterval(sliderInterval)
@@ -29,7 +29,7 @@ $(() => {
     }
     $("#section-wrapper").children().eq(projectIndex).css("display", "block")
     // $("#section-wrapper").children().eq(projectIndex).fadeIn(100)
-    sliderInterval = setInterval(autoNextImg, 8000)
+    sliderInterval = setInterval(autoNextImg, 4000)
   }
 
   const nextImgLeft = () => {
@@ -46,7 +46,7 @@ $(() => {
     // $("#section-wrapper").children().eq(projectIndex).fadeIn(600)
 
     $("#section-wrapper").children().eq(projectIndex).css("display", "block")
-    sliderInterval = setInterval(autoNextImg, 8000)
+    sliderInterval = setInterval(autoNextImg, 4000)
   }
 
   $menuDrop = $("#main-nav-ul-hamburger")

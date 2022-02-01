@@ -519,6 +519,10 @@ input[type="submit"] {
   .resume-education p {
     font-size: 25px;
   }
+  .resume-related-experience h3 {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
 
   /* max-width: 651px to 899px carousel */
   img {
@@ -639,6 +643,11 @@ input[type="submit"] {
   .resume-related-experience-section h4,
   .resume-education h3,
   .resume-education p {
+    font-size: 30px;
+  }
+  .resume-related-experience h3 {
+    margin-top: 50px;
+    margin-bottom: 0;
     font-size: 30px;
   }
 
