@@ -19,9 +19,9 @@ $(() => {
     clearInterval(sliderInterval)
     $("#section-wrapper").children().eq(projectIndex).css("display", "none")
 
-    // Looks worse when I have it fade bc of how the html is set up
+    // Looks worse when I have it fade bc of how the html is set up (I THNK)
     // $("#section-wrapper").children().eq(projectIndex).fadeOut(100)
-    // $("#section-wrapper").delay(200)
+    // $("#section-wrapper").delay(800)
     projectIndex++
 
     if (projectIndex > numberOfPojects) {

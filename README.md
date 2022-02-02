@@ -1,5 +1,8 @@
 # Portfolio
 
+LINK TO PAGE:
+https://kidwizard42.github.io/Portfolio/
+
 My portfolio which contains my resume, a bio, and projects I've built
 Welcome to my portfolio page! This website is to showcase my skills and to share a little bit about my self. I hope you enjoy your time here!
 
