@@ -8,8 +8,19 @@ body {
   font-family: "Poiret One", cursive;
 }
 
+.work-experience h3 {
+  margin-top: 50px;
+  margin-bottom: 0;
+  font-size: 30px;
+}
+
 a {
   text-decoration: none;
+}
+
+.bold-title{
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 /* stops resume links from having a white underline */

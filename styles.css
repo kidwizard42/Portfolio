@@ -625,7 +625,7 @@ input[type="submit"] {
     width: 35%;
   }
   .resume-skills {
-    width: 35%;
+    width: 45%;
   }
   .resume-skills p {
     margin-right: 5px;
@@ -636,8 +636,8 @@ input[type="submit"] {
   }
 
   .resume-related-experience {
-    width: 50%;
-    max-width: 600px;
+    width: 60%;
+    max-width: 900px;
   }
   .resume-related-experience-section p,
   .resume-related-experience-section h4,
